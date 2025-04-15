@@ -19,7 +19,7 @@ Place custom JS and CSS files in the `web` folder and reference them in APEX via
 
 ---
 
-## ✅ General Coding Guidelines
+## General Coding Guidelines
 
 - Always use **`let`** or **`const`** instead of `var`.
 - Use **strict mode** at the beginning of each file.
@@ -34,7 +34,7 @@ Place custom JS and CSS files in the `web` folder and reference them in APEX via
 
 ---
 
-## 📚 JavaScript Best Practices
+## JavaScript Best Practices
 
 ### Naming Conventions
 - `camelCase` for variables and functions.
@@ -59,7 +59,7 @@ const calculateTotal = (qty, price) => qty * price;
 
 ---
 
-## 🔄 jQuery Practices in Oracle APEX
+## jQuery Practices in Oracle APEX
 
 ### Selecting Elements
 - Use `#STATIC_ID` selectors over classes when targeting APEX components.
@@ -85,7 +85,7 @@ $(function() {
 
 ---
 
-## 🧠 APEX-Specific Guidelines
+## APEX-Specific Guidelines
 
 - Use `apex.item()` for accessing page items.
 ```js
@@ -109,14 +109,14 @@ apex.server.process("MY_PROCESS", {
 
 ---
 
-## 🧪 Debugging & Logging
+## Debugging & Logging
 - Use `console.log()` during development.
 - Remove all debugging logs before production.
 - Use `apex.debug()` for APEX-specific logging.
 
 ---
 
-## 🛑 Avoid
+## Avoid
 - Inline JavaScript in HTML attributes (e.g., `onclick`).
 - Direct DOM manipulation unless necessary.
 - Using `eval()`.
@@ -124,21 +124,21 @@ apex.server.process("MY_PROCESS", {
 
 ---
 
-## 🔐 Security
+## Security
 - Escape dynamic HTML content using `apex.util.escapeHTML()`.
 - Use APEX APIs for item values to prevent injection.
 - Sanitize all inputs if doing manual DOM updates.
 
 ---
 
-## 📌 Version Control Tips
+## Version Control Tips
 - Commit small, well-defined changes.
 - Include comments in commit messages.
 - Use meaningful branch names: `feature/button-handler`, `bugfix/item-null-check`.
 
 ---
 
-## 📋 Sample Template for JS File
+## Sample Template for JS File
 ```js
 /**
  * File: custom.js
@@ -172,7 +172,7 @@ apex.server.process("MY_PROCESS", {
 
 ---
 
-## 📚 References
+## References
 - [Oracle APEX JavaScript API](https://docs.oracle.com/en/database/oracle/apex/)
 - [jQuery API Documentation](https://api.jquery.com/)
 - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
