@@ -130,6 +130,50 @@ apex.server.process("MY_PROCESS", {
 - Sanitize all inputs if doing manual DOM updates.
 
 ---
+## HTML & CSS Coding Standards
+
+### HTML
+- Use semantic HTML elements (`<section>`, `<article>`, `<header>`, `<footer>`, etc.).
+- Use lowercase for all element names and attributes.
+- Use double quotes for attribute values.
+- Self-close void elements: `<br />`, `<img />`.
+- Indent nested elements with 2 spaces.
+- Avoid inline styles.
+
+#### Example
+```html
+<section class="user-profile">
+  <h2>User Info</h2>
+  <p id="userEmail">john.doe@example.com</p>
+</section>
+```
+
+### CSS
+- Use external CSS files; avoid inline or embedded styles.
+- Use BEM (Block Element Modifier) naming convention:
+  - `.block`, `.block__element`, `.block--modifier`
+- Group related styles together.
+- Keep CSS organized by layout sections or components.
+- Use variables and consistent units (`rem`, `%`, `em` over `px` where appropriate).
+
+#### Example
+```css
+.user-profile {
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+.user-profile__image {
+  width: 100px;
+  height: auto;
+}
+
+.user-profile--highlighted {
+  border: 2px solid #007cc2;
+}
+```
+
+---
 
 ## Version Control Tips
 - Commit small, well-defined changes.
